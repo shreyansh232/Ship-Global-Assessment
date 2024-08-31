@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts for that nice Lato look -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ionicons for some fancy SVG action -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Our custom styles -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Image Carousel</title>
+  </head>
+
+  <body>
+    <!-- Main carousel wrapper -->
+    <div class="carousel-container">
+      <!-- Left slide (previous image) -->
+      <div class="carousel-slide carousel-slide--left">
+        <img
+          src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          alt="Orange cat with blue eyes"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80';"
+        />
+        <div class="carousel-caption">
+          <h3>Blue-Eyed Beauty</h3>
+          <p>An orange cat with piercing blue eyes</p>
+        </div>
+      </div>
+      <!-- Main slide (current image) -->
+      <div class="carousel-slide carousel-slide--main">
+        <img
+          src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          alt="Yawning cat"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80';"
+        />
+        <div class="carousel-caption">
+          <h3>Sleepy Yawn</h3>
+          <p>A cat caught mid-yawn</p>
+        </div>
+      </div>
+      <!-- Right slide (next image) -->
+      <div class="carousel-slide carousel-slide--right">
+        <img
+          src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          alt="Cat with heterochromia"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80';"
+        />
+        <div class="carousel-caption">
+          <h3>Unique Eyes</h3>
+          <p>A cat with two different colored eyes</p>
+        </div>
+      </div>
+      <!-- More slides for the carousel -->
+      <div class="carousel-slide">
+        <img
+          src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          alt="Fluffy white cat"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80';"
+        />
+        <div class="carousel-caption">
+          <h3>Fluffy Cloud</h3>
+          <p>A white cat with luxurious fur</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img
+          src="https://images.unsplash.com/photo-1513245543132-31f507417b26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          alt="Kitten in a blanket"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80';"
+        />
+        <div class="carousel-caption">
+          <h3>Cozy Kitten</h3>
+          <p>A cute kitten wrapped in a blanket</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img
+          src="https://images.unsplash.com/photo-1561948955-570b270e7c36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+          alt="Cat looking up"
+          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80';"
+        />
+        <div class="carousel-caption">
+          <h3>Curious Gaze</h3>
+          <p>A cat looking up with curiosity</p>
+        </div>
+      </div>
+      <!-- Carousel navigation -->
+      <div class="carousel-controls">
+        <button class="carousel-button" id="leftBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="m15 4l2 2l-6 6l6 6l-2 2l-8-8z"
+            />
+          </svg>
+        </button>
+        <button class="carousel-button" id="rightBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- JS to make the carousel work its magic -->
+    <script src="script.js"></script>
+  </body>
+</html>

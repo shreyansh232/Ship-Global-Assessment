@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <!-- External font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Word Scramble</h1>
+        <div class="game-area">
+            <!-- Display area for the scrambled word -->
+            <div class="scrambled-word" id="scrambledWord"></div>
+            <!-- Display area for the hint -->
+            <div class="hint" id="hint"></div>
+            <div class="input-area">
+                <!-- Input field for user's guess -->
+                <input type="text" id="userGuess" placeholder="Your guess...">
+                <!-- Button to check the user's guess -->
+                <button onclick="checkWord()" id="checkButton">Check</button>
+            </div>
+            <!-- Button to get a new word -->
+            <button onclick="getNewWord()" id="refreshButton">New Word</button>
+        </div>
+        <div class="game-info">
+            <!-- Display area for feedback on user's guess -->
+            <div id="feedback"></div>
+            <!-- Display area for number of attempts -->
+            <div id="attempts"></div>
+            <!-- Display area for timer -->
+            <div id="timer"></div>
+        </div>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
